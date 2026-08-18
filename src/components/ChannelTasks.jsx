@@ -286,7 +286,7 @@ export default function ChannelTasks() {
             Events / {eventName}
           </p>
 
-          <h1 className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-3xl font-black uppercase text-transparent md:text-5xl">
+          <h1 className={`bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text font-black uppercase text-transparent ${channelName?.length > 14 ? 'text-2xl md:text-3xl lg:text-4xl' : 'text-3xl md:text-5xl'}`}>
             {channelName?.replace(/-/g, " ")}
           </h1>
         </div>
